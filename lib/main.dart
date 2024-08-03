@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:practice/main_page.dart';
+import 'package:practice/pages/login--register/login_page.dart';
 import 'package:practice/themes/cubit/theme_cubit.dart';
 
 void main(List<String> args) {
