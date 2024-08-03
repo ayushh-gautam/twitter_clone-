@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../components/custom_button.dart';
 import '../../components/custom_textfield.dart';
 
 class LoginPage extends StatelessWidget {
@@ -10,9 +11,10 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: SafeArea(
           child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 25),
+        margin: const EdgeInsets.symmetric(horizontal: 25),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -34,6 +36,27 @@ class LoginPage extends StatelessWidget {
                     color: Theme.of(context).colorScheme.primary,
                     fontWeight: FontWeight.bold),
               ),
+            ),
+            const Gap(15),
+            const CustomButton(
+              buttonName: 'Login',
+            ),
+            const Gap(10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Not a member?',
+                  style:
+                      TextStyle(color: Theme.of(context).colorScheme.primary),
+                ),
+                Text(
+                  ' Register now',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Theme.of(context).colorScheme.primary),
+                )
+              ],
             ),
           ],
         ),
