@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:practice/pages/profile/profile_page.dart';
+import 'package:practice/pages/login--register/login_page.dart';
 import 'package:practice/pages/settings/settings_page.dart';
 
 import 'pages/home/home_page.dart';
@@ -16,7 +16,7 @@ class _MainPageState extends State<MainPage> {
   int myIndex = 0;
   List myList = const [
     HomePage(),
-    ProfilePage(),
+    LoginPage(),
     SettingsPage(),
   ];
 
